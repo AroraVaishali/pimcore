@@ -73,7 +73,7 @@ class ClassDefinition extends Model\AbstractModel
      *
      * @var string
      */
-    public $parentClass;
+    public $parentClass = '';
 
     /**
      * Name of the listing parent class if set
@@ -1027,7 +1027,7 @@ class ClassDefinition extends Model\AbstractModel
      */
     public function setParentClass($parentClass)
     {
-        $this->parentClass = $parentClass;
+        $this->parentClass = (string) $parentClass;
 
         return $this;
     }
