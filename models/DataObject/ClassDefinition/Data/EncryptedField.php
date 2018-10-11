@@ -642,6 +642,8 @@ class EncryptedField extends Model\DataObject\ClassDefinition\Data
     /**
      * @param $object
      * @param array $context
+     *
+     * @return $this
      */
     public function enrichLayoutDefinition($object, $context = [])
     {

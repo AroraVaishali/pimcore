@@ -98,6 +98,8 @@ class Text extends Model\DataObject\ClassDefinition\Layout
     /** Override point for Enriching the layout definition before the layout is returned to the admin interface.
      * @param $object Model\DataObject\Concrete
      * @param array $context additional contextual data
+     *
+     * @return $this
      */
     public function enrichLayoutDefinition($object, $context = [])
     {

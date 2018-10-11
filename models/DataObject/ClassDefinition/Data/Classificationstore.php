@@ -420,6 +420,7 @@ class Classificationstore extends Model\DataObject\ClassDefinition\Data
      * @param DataObject\Concrete $object
      * @param mixed $params
      *
+     * @return array
      * @throws \Exception
      */
     public function getForWebserviceExport($object, $params = [])
